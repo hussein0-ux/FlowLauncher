@@ -266,7 +266,7 @@ class MainActivity : Activity() {
         }
 
         val handle = View(this).apply {
-            background = pill(0x88FFFFFF, dp(3f), 0x00000000)
+            background = pill(0x88FFFFFF.toInt(), dp(3f), 0x00000000)
             setOnClickListener { closeDrawer(true) }
         }
         drawer.addView(
